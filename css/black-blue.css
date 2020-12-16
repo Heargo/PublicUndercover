@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.room-hub-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.hub {
+    text-align: center;
+}
+
+.room-form-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.room-hub-name-id {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leave-button {
+    position: absolute;
+    left: 20px;
+}
+
+.start {
+    background-color: #28CBF9;
+    margin-top: 10%;
+}
+
+.joueurs {
+    margin-bottom: 10px;
+}
+
+.room-hub-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 49%;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    transform: scale(2, 2);
+    text-align: center;
+}
+
+.top {
+    background-color: #292929;
+    height: 110px;
+}
+
+.bottom {
+    position: absolute;
+    background-color: #292929;
+    height: 110px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.login {
+    position: absolute;
+    left: 20px;
+}
+
+.home {
+    position: absolute;
+    left: 20px;
+    height: 150px;
+    width: 275px;
+}
+
+.compte-signup {
+    position: absolute;
+    right: 20px;
+}
+
+.help {
+    margin-bottom: 10px;
+    margin-left: 3%;
+    margin-right: auto;
+}
+
+.settings {
+    width: 180px;
+    margin-bottom: 10px;
+    margin-left: 18%;
+    margin-right: 14%;
+    background-color: #505050;
+}
+
+.credits {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: 3%;
+}
+
+.play {
+    background-color: #28CBF9;
+}
+
+.start {
+    background-color: #28CBF9;
+}
+
+.game-container {
+    width: 100%;
+    height: 100%;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.game-list li {
+    margin: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.vote {
+    cursor: pointer;
+}
+
+.playing {
+    border: solid 2px #28CBF9;
+    border-radius: 10px;
+}
+
+#word-form {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    transform: scale(2, 2);
+}
+
+.dead {
+    color: red;
+}
+
+.win {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    transform: scale(1.5, 1.5);
+}
+
+.image-game {
+    width: 80px;
+    height: auto;
+}
+
+.image-titre {
+    width: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+.img-team {
+    display: flex;
+    flex-direction: row;
+}
+
+.screen-game-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.button-join-create {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.button-join-create div {
+    margin: 0 auto;
+    background-color: #505050;
+    padding: 0.4rem 2rem;
+    margin-bottom: 30px;
+    transition: all ease 0.8s;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    width: 50%;
+    height: 120px;
+    text-align: center;
+    color: black;
+    line-height: 120px;
+}
+
+@media screen and (max-width: 1200px) and (orientation:portrait) {
+    .button-join-create {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 40%;
+        margin-bottom: 5%;
+    }
+    .button-join-create div {
+        margin: 0 auto;
+        background-color: #505050;
+        padding: 0.4rem 2rem;
+        margin-bottom: 200px;
+        transition: all ease 0.8s;
+        font-size: 75px;
+        cursor: pointer;
+        border-radius: 20px;
+        outline: none;
+        width: 50%;
+        height: 240px;
+        text-align: center;
+        color: black;
+        line-height: 120px;
+        box-shadow: 4px 4px rgb(136, 136, 136);
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .center_main {
+        background-color: #1b1b1b;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+    .center_main img {
+        height: 50%;
+        width: auto;
+        margin-left: 20%;
+        margin-right: auto;
+        justify-content: center;
+    }
+    .help_img_petite img {
+        height: 150px;
+        width: auto;
+    }
+    .help_img_grande img {
+        height: 400px;
+        width: auto;
+    }
+    .help_text {
+        width: 80%;
+        font-size: 20px;
+        transform: scale(0.9, 0.9);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    .center_main {
+        background-color: #1b1b1b;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+}
+
+.form-login-signup {
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 1200px) and (orientation:portrait) {
+    .center_main {
+        background-color: #1b1b1b;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50%;
+    }
+    .play {
+        height: 125px;
+        width: 300px;
+        background-color: #28CBF9;
+        font-size: 75px;
+    }
+    .start {
+        height: 125px;
+        width: 300px;
+        background-color: #28CBF9;
+        font-size: 60px;
+    }
+    .form-login-signup {
+        margin-top: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(1.3);
+    }
+    .room-hub-name-id {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        margin-bottom: 10%;
+        transform: scale(1.5, 1.5);
+    }
+    #word-form {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 7%;
+        transform: scale(3, 3);
+    }
+    .game-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 4%;
+    }
+    .game-list li {
+        margin: 3rem;
+        padding: 1rem;
+        text-align: center;
+        transform: scale(1.5, 1.5);
+    }
+}
+
+hr.rounded {
+    border-top: 6px solid #bbb;
+    border-radius: 5px;
+}
+
+.informations {
+    text-align: center;
+}
+
+.top10 {
+    margin-top: 15%;
+    text-align: center;
+}
+
+.top10 li {
+    margin-top: 20px;
+}
+
+.informations p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.page_credits {
+    text-align: center;
+    transform: scale(1.5, 1.5);
+}
+
+.page_credits h1 {
+    padding: 15px;
+}
+
+.page_credits h2 {
+    padding: 10px;
+}
+
+.page_credits ul {
+    text-align: center;
+}
+
+.page_credits li {
+    margin-right: auto;
+    margin-left: auto;
+    height: 70px;
+    width: 100px;
+}
+
+.page_credits a {
+    color: white;
+}
+
+.center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.big {
+    font-size: 3rem;
+}
+
+.noTournee {
+    font-size: 2rem;
+}
+
+.centreHeight {
+    margin-top: 40vh;
+}
+
+.moto {
+    margin-top: 40vh;
+    font-size: 3rem;
+}
+
+.signOptionContainer {
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-center {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    transform: scale(1.5, 1.5);
+}
+
+.form-settings {
+    transform: scale(1.5, 1.5);
+}
+
+.formInput {
+    text-align: center;
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border: black solid 2px;
+}
+
+.formInput:focus {
+    outline: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    text-align: center;
+    margin: 200px;
+    font-size: 2.2rem;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 90px;
+}
+
+nav div:hover {
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    text-align: center;
+    height: 70px;
+    width: 100px;
+    line-height: 90px;
+}
+
+nav li:hover {
+    border-bottom: 2px solid #2D2D2D;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin: 5% 20%;
+    font-size: 0.9rem;
+}
+
+section h2 {
+    margin: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 150px;
+    border: solid #D8D8D8 1px;
+    padding: 0.5rem;
+}
+
+td {
+    padding: 0 10px;
+    width: 150px;
+    padding: 0.3rem;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #28CBF9;
+    border: 2px solid black;
+    color: black;
+    border-radius: 50px;
+    padding: 0.2rem 1rem;
+    margin-top: 10px;
+    transition: all ease 0.8s;
+}
+
+input[type="submit"]:hover {
+    color: black;
+    background-color: #28CBF9;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: #505050;
+    border: 0px solid black;
+    padding: 0.4rem 2rem;
+    margin-top: 15px;
+    transition: all ease 0.8s;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+}
+
+.signOptionButton {
+    height: 100px;
+    width: 50%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+button:hover {
+    color: black;
+    background-color: #505050;
+}
+
+body {
+    background-color: #1b1b1b;
+    color: white;
+    display: flex;
+}
+
+label {
+    margin-right: 10px;
+}
+
+.errorFormulaire {
+    border: red solid 2px;
+}
+
+
+/*--- CSS pour la page help ---*/
+
+.help_text {
+    font-size: 20px;
+}
+
+.help_text h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.help_text h2 {
+    font-size: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.help_text p {
+    margin-left: 2%;
+}
+
+.help_text img {
+    margin: 2%;
+}
+
+.help_text iframe {
+    margin: 2%;
+}
+
+.centrage {
+    text-align: center;
+}
+
+.IMPORTANT {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 175%;
+}
+
+
+/*--- Fin CSS pour la page help ---*/
